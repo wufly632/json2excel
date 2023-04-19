@@ -1,0 +1,18 @@
+{
+  "SheetName": "Sheet1",
+  "Fields": [
+    {
+    "fieldName": "_id",
+    "fieldPath": "_id"
+    },
+    {
+      "fieldName": "business_amount",
+      "fieldPath": "_source.business_amount"
+    },
+    {
+      "fieldName": "orderNo",
+      "fieldPath": "_source.order_no"
+    }
+  ],
+  "OutputPath": "./Book1.xlsx"
+}
