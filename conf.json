@@ -1,4 +1,5 @@
 {
+  "DataFile": "./data.json",
   "SheetName": "Sheet1",
   "Fields": [
     {

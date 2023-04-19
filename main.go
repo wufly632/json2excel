@@ -9,6 +9,7 @@ import (
 
 // Excel配置
 type ExcelConf struct {
+	DataFile   string  `json:"DataFile"`
 	SheetName  string  `json:"SheetName"`
 	Fields     []Field `json:"Fields"` // 字段-列号映射
 	OutputPath string  `json:"OutputPath"`
@@ -33,7 +34,7 @@ func main() {
 
 	// 解析JSON
 	// 读取data.json
-	dataJSON, _ := os.ReadFile("data.json")
+	dataJSON, _ := os.ReadFile(conf.DataFile)
 
 	// 新建Excel
 	f := excelize.NewFile()
